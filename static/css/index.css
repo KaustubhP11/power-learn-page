@@ -111,42 +111,57 @@ body {
 }
 
 /* Results carousel customization */
+/* Results carousel customization */
 .results-carousel {
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .results-carousel .item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .results-carousel .item img {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     height: auto;
-    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Fix duplicate slides issue */
-.carousel-clone {
-    display: none !important;
+.carousel-container {
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
 }
 
-/* Additional carousel control visibility */
-.results-carousel .prev, 
-.results-carousel .next {
-    margin-top: -200px;  /* Adjust based on your image height */
+/* Hide cloned slides */
+.carousel .item:not([data-active]) {
+    display: none;
 }
 
-.results-carousel video {
-  margin: 0;
+/* Navigation arrows positioning */
+.slider-navigation-previous,
+.slider-navigation-next {
+    margin: 0 20px;
+    height: 100%;
+    transform: translateY(-50%);
 }
 
+.slider-pagination {
+    display: none;  /* Hide pagination dots if not needed */
+}
+
+/* Caption styling */
+.main-caption {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
 .slider-pagination .slider-page {
   background: #000000;
 }
