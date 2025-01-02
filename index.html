@@ -2,43 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta name="description" content="PowerLearn: Differentially private and model agnostic tabular data embeddings">
+  <meta property="og:title" content="PowerLearn Project Page"/>
+  <meta property="og:description" content="A novel method for privacy-preserving, distributed tabular data embeddings"/>
+  <meta property="og:url" content="PROJECT URL"/>
+  <meta property="og:image" content="static/image/overview.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="PowerLearn: Private Tabular Data Embeddings">
+  <meta name="twitter:description" content="A novel method for privacy-preserving, distributed tabular data embeddings">
+  <meta name="twitter:image" content="static/images/overview.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="differential privacy, tabular data, embeddings, distributed learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>LoRA-SB</title>
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <title>PowerLearn</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
@@ -46,69 +34,34 @@
 </head>
 <body>
 
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Initialization using Update Approximation is a <em>Silver Bullet</em> for Extremely Efficient Low-Rank Fine-Tuning</h1>
+            <h1 class="title is-1 publication-title">PowerLearn: Differentially private and model agnostic tabular data embeddings</h1>
             <div class="is-size-4 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
-                  <span>Kaustubh Ponkshe<sup>*</sup><sup>1</sup>,</span>
-                  <span>Raghav Singhal<sup>*</sup><sup>1</sup>,</span>
+                <span>Kaustubh Ponkshe<sup>*1</sup>,</span>
+                <span>Raghav Singhal<sup>*1</sup>,</span>
+                <a href="https://eduardgorbunov.github.io/">Eduard Gorbunov<sup>1</sup>,</a>
+                <a href="https://faculty.cc.gatech.edu/~atumanov/">Alexey Tumanov<sup>2</sup>,</a>
+                <a href="https://samuelhorvath.github.io/">Samuel Horvath<sup>1</sup>,</a>
+                <a href="https://praneeth.mit.edu/">Praneeth Vepakomma<sup>1,3</sup></a>
               </span>
-              <span class="author-block">
-                  <a href="https://eduardgorbunov.github.io/" target="_blank">Eduard Gorbunov<sup>1</sup>,</a>
-              </span>
-              <span class="author-block">
-                  <a href="https://faculty.cc.gatech.edu/~atumanov/" target="_blank">Alexey Tumanov<sup>2</sup>,</a>
-              </span>
-              <span class="author-block">      
-                  <a href="https://sites.google.com/view/samuelhorvath" target="_blank">Samuel Horvath<sup>1</sup>,</a>
-              </span>
-              <span class="author-block">
-                  <a href="https://praneeth.mit.edu/" target="_blank">Praneeth Vepakomma<sup>1,3</sup></a>
-              </span>
-          </div>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1 </sup>Mohamed bin Zayed University of Artificial Intelligence, UAE</span>
-                    <br><sup>2 </sup>Georgia Institute of Technology, USA</span>
-                    <br><sup>3 </sup>Massachusetts Institute of Technology, USA</span>
-                    <span class="eql-cntrb"><small><br><sup>* </sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Mohamed bin Zayed University of Artificial Intelligence, UAE</span>
+              <br><sup>2</sup>Georgia Institute of Technology, USA</span>
+              <br><sup>3</sup>Massachusetts Institute of Technology, USA</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         
-                      <!-- Arxiv PDF link -->
-                      <!-- <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span> -->
-
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/RaghavSinghal10/lora-sb" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://github.com/[REPO]" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -116,312 +69,120 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2411.19557" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://arxiv.org/abs/[PAPER_ID]" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-         Your video here -->
-<!--         <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Low-rank adapters have become a standard approach for efficiently fine-tuning large language models (LLMs), but they often fall short of achieving the performance of full fine-tuning. We propose a method, <strong>LoRA</strong> <strong>S</strong>ilver <strong>B</strong>ullet or <strong>LoRA-SB</strong>, that approximates full fine-tuning within low-rank subspaces using a carefully designed initialization strategy. We theoretically demonstrate that the architecture of LoRA-XS—which inserts a trainable <em>r × r</em> matrix between <em>B</em> and <em>A</em> while keeping other matrices fixed—provides the precise conditions needed for this approximation. We leverage its constrained update space to achieve optimal scaling for high-rank gradient updates while removing the need for hyperparameter tuning. We prove that our initialization offers an optimal low-rank approximation of the initial gradient and preserves update directions throughout training. Extensive experiments across mathematical reasoning, commonsense reasoning, and language understanding tasks demonstrate that our approach exceeds the performance of standard LoRA while using <strong>27-90x</strong> fewer parameters, and comprehensively outperforms LoRA-XS. Our findings establish that it is possible to simulate full fine-tuning in low-rank subspaces, and achieve significant efficiency gains without sacrificing performance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">LoRA-SB Illustration</h2>
-    <figure class = "image">
-    <img src="static/images/LoRA-SB-intro.png" alt="LoRA-SB Illustration">
-      <figcaption class="has-text-justified mt-4">
-        LoRA-XS reduces parameter count compared to LoRA by inserting a trainable <em>r × r</em> matrix <em>R</em> between <em>B</em> and <em>A</em>, while keeping other matrices fixed, leading to <em>W = W<sub>0</sub> + sBRA</em>. Our method, LoRA-SB, leverages the same architecture. We find that updating <em>R</em> using its gradients <em>g<sup>R</sup></em> is equivalent to updating the full-finetuning matrix <em>W</em> with an equivalent gradient <em>g<sub>SB</sub> = sBg<sup>R</sup>A</em>. We initialize <em>B</em>, <em>R</em>, and <em>A</em> such that the equivalent gradient <em>g<sub>SB</sub></em> optimally approximates the full fine-tuning gradient <em>g</em> in low rank subspaces <strong>at each training step</strong>. In essence, we simulate the <strong>entire full fine-tuning process</strong> optimally within low-rank subspaces by <strong>utilizing only the initial gradient <em>g<sub>1</sub></em></strong> (shown in green) from full fine-tuning.
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Contributions</h2>
-    <div class="content has-text-justified">
-      <ul>
-        <li>
-          We theoretically formalize the limitations of LoRA-XS, showing how its constrained update space leads to suboptimal gradient approximation, initialization sensitivity, and hyperparameter dependence.
-        </li>
- 
-        <li>
-          We propose a principled initialization strategy derived from approximating the first step of full fine-tuning, proving it provides optimal low-rank approximation of the initial gradient and preserves update directions throughout training.
-        </li>
- 
-        <li>
-          We prove that our initialization makes gradient optimization hyperparameter-independent and guarantees convergence by maintaining orthonormal bases, eliminating the need for any tuning of the scaling factor.
-        </li>
- 
-        <li>
-          Through extensive experiments on 4 models across 16 datasets covering mathematical reasoning, commonsense reasoning, and language understanding tasks, we demonstrate that our method surpasses the performance of LoRA while using <strong>27-90x</strong> less parameters, and comprehensively outperforms LoRA-XS.
-        </li>
-      </ul>
-    </div>
-  </div>
- </section>
-
-
- <section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centred">Method</h2>
-    <div class="content has-text-justified">
-      <p>
-        Please refer to our paper for a detailed explanation of our method and the associated proofs. We provide a pseudo-code of our algorithm below.
-      </p>
-    </div>
-    <div class="content has-text-centered">
-      <img src="static/images/sb-algo.png" alt="LoRA-SB Algorithm">
-    </div>
-  </div>
- </section>
-
-
-<section class="section hero-is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Main Results</h2>
-
-    <!-- Carousel wrapper -->
-    <div id="fedex-lora-carousel" class="carousel results-carousel">
-      <!-- Carousel item 1 -->
-      <div class="item">
-        <div class="carousel-content">
-          <img src="static/images/sb-math.png" alt="table-math">
-          <h2 class="subtitle has-text-centered main-caption">
-            Arithmetic Reasoning: Mistral-7B and Gemma-2 9B
-          </h2>
-        </div>
-      </div>
-
-      <!-- Carousel item 2 -->
-      <div class="item">
-        <div class="carousel-content">
-          <img src="static/images/sb-cr.png" alt="table-cr">
-          <h2 class="subtitle has-text-centered main-caption">
-            Commonsense Reasoning: Llama-3.2 3B
-          </h2>
-        </div>
-      </div>
-
-      <!-- Carousel item 3 -->
-      <div class="item">
-        <div class="carousel-content">
-          <img src="static/images/sb-glue.png" alt="table-glue">
-          <h2 class="subtitle has-text-centered main-caption">
-            GLUE: RoBERTa-large
-          </h2>
-        </div>
-      </div>
-
-      <!-- Carousel item 4 -->
-      <div class="item">
-        <div class="carousel-content">
-          <img src="static/images/loss_mistral_96.png" alt="loss-mistral">
-          <h2 class="subtitle has-text-centered main-caption">
-            Arithmetic Reasoning: Mistral-7B
-          </h2>
-        </div>
-      </div>
-
-      <!-- Carousel item 5 -->
-      <div class="item">
-        <div class="carousel-content">
-          <img src="static/images/loss_gemma_96.png" alt="loss-gemma">
-          <h2 class="subtitle has-text-centered main-caption">
-            Arithmetic Reasoning: Gemma-2 9B
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-       Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video"> --> 
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Traditional collaborative learning approaches are based on sharing of model weights between clients and a server. However, there are advantages to resource efficiency through schemes based on sharing of activations. Several differentially private methods were developed for sharing of weights while such mechanisms do not exist so far for sharing of activations. We propose Power-Learning to learn a privacy encoding network in conjunction with a small utility generation network such that the final activations generated from it are equipped with formal differential privacy guarantees. These privatized activations are then shared with a more powerful server, that learns a post-processing that results in a higher accuracy for machine learning tasks. We show that our co-design of collaborative and private learning results in requiring only one round of privatized communication and lesser compute on the client than traditional methods. The privatized activations that we share from the client are agnostic to the type of model used on the server in order to process these activations to complete a task.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
+  </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">System Overview</h2>
+      <figure class="image">
+        <img src="static/images/overview.png" alt="PowerLearn System Overview">
+        <figcaption class="has-text-justified mt-4">
+          Schematic illustration of the Power-Learning for distributed and private learning, that theoretically calibrates and measures the obtained level of ϵ and δ for differential privacy. This calibration is done after the minimization of a specifically proposed privacy loss that is minimized in regularization with the machine learning utility loss.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Contributions</h2>
+      <div class="content has-text-justified">
+        <ul>
+          <li>First framework for sharing neural network activations with formal differential privacy guarantees</li>
+          <li>Novel regularized learning scheme providing theoretical privacy guarantees for shared activations</li>
+          <li>Resource-efficient privacy with significant computational and communication efficiency improvements</li>
+          <li>Model-agnostic approach allowing servers to employ any machine learning method</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method</h2>
+      <div class="content has-text-justified">
+        <p>
+          Our method transforms private data into embeddings through a carefully designed two-step process:
+        </p>
+        <img src="static/images/algorithm.png" alt="PowerLearn Algorithm">
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item">
+          <img src="static/images/results1.png" alt="Privacy vs Utility Results">
+          <h2 class="subtitle has-text-centered">Privacy-Utility Tradeoff</h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-             Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item">
+          <img src="static/images/results2.png" alt="Resource Efficiency">
+          <h2 class="subtitle has-text-centered">Resource Efficiency</h2>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\ --> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item">
+          <img src="static/images/results3.png" alt="Defense Against Attacks">
+          <h2 class="subtitle has-text-centered">Defense Performance</h2>
         </div>
       </div>
     </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
+  </section>
 
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>
-        @misc{ponkshe2024initializationusingupdateapproximation,
-          title={Initialization using Update Approximation is a Silver Bullet for Extremely Efficient Low-Rank Fine-Tuning}, 
-          author={Kaustubh Ponkshe and Raghav Singhal and Eduard Gorbunov and Alexey Tumanov and Samuel Horvath and Praneeth Vepakomma},
-          year={2024},
-          eprint={2411.19557},
-          archivePrefix={arXiv},
-          primaryClass={cs.CL},
-          url={https://arxiv.org/abs/2411.19557}, 
-    }
-      </code></pre>
+      <pre><code>@article{powerlearn2024,
+  title={Power Learning: Differentially private and model agnostic tabular data embeddings},
+  author={Ponkshe, Kaustubh and Singhal, Raghav and Gorbunov, Eduard and Tumanov, Alexey and Horvath, Samuel and Vepakomma, Praneeth},
+  journal={arXiv preprint},
+  year={2024}
+}</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
-
+  </section>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- Default Statcounter code for LoRA SB Project Page
-https://raghavsinghal10.github.io/lora-sb-page/ -->
-<script type="text/javascript">
-  var sc_project=13064177; 
-  var sc_invisible=1; 
-  var sc_security="71f6139d"; 
-  </script>
-  <script type="text/javascript"
-  src="https://www.statcounter.com/counter/counter.js"
-  async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics"
-  href="https://statcounter.com/" target="_blank"><img
-  class="statcounter"
-  src="https://c.statcounter.com/13064177/0/71f6139d/1/"
-  alt="Web Analytics"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-  <!-- End of Statcounter Code -->
-  <!-- End of Statcounter Code -->
-  <!-- End of Statcounter Code -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
