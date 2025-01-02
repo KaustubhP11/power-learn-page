@@ -110,15 +110,15 @@ body {
 .publication-body img {
 }
 
-.results-carousel {
-  overflow: hidden;
+.results-carousel .item img {
+    min-width: 800px;
+    margin: auto;
+    display: block;
 }
 
-.results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  padding: 20px;
-  font-size: 0;
+.carousel {
+    margin: 2em auto;
+    max-width: 900px;
 }
 
 .results-carousel video {
