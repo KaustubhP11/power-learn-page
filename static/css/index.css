@@ -111,64 +111,44 @@ body {
 }
 
 /* Results carousel customization */
-/* Results carousel customization */
-.results-carousel {
-    overflow: hidden;
+.carousel-wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.results-carousel {
+    width: 100%;
     position: relative;
 }
 
 .results-carousel .item {
-    min-width: 100%;
-    margin: 0;
-    padding: 0;
+    display: none;
+    width: 100%;
 }
 
-.results-carousel .item img {
+.results-carousel .item.is-active {
+    display: block;
+}
+
+.carousel-item-content {
     width: 100%;
-    max-width: 800px;
+    padding: 20px;
+}
+
+.carousel-item-content img {
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.carousel-container {
-    scroll-snap-type: x mandatory;
-    overflow: hidden;
-}
-
-/* Hide cloned slides */
-.carousel .item:not([data-active]) {
-    display: none;
-}
-
-/* Navigation arrows positioning */
 .slider-navigation-previous,
 .slider-navigation-next {
-    margin: 0 20px;
     height: 100%;
-    transform: translateY(-50%);
+    padding: 0 20px;
 }
 
-.slider-pagination {
-    display: none;  /* Hide pagination dots if not needed */
-}
-
-/* Caption styling */
-.main-caption {
-    margin-top: 1rem;
-    text-align: center;
+.carousel.is-2 .carousel-container {
     width: 100%;
 }
-.slider-pagination .slider-page {
-  background: #000000;
-}
-
-.eql-cntrb { 
-  font-size: smaller;
-}
-
-
-
